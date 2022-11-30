@@ -9,6 +9,7 @@ abstract class Routes {
   static const ITEMS = _Paths.ITEMS;
   static const HISTORY = _Paths.HISTORY;
   static const PROFILE = _Paths.PROFILE;
+  static const TRANSAKSI = _Paths.TRANSAKSI;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const ITEMS = '/items';
   static const HISTORY = '/history';
   static const PROFILE = '/profile';
+  static const TRANSAKSI = '/transaksi';
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TransaksiTerakhir extends StatelessWidget {
-  const TransaksiTerakhir({
+class Pemasukan extends StatelessWidget {
+  const Pemasukan({
     Key? key,
   }) : super(key: key);
 
@@ -9,10 +9,10 @@ class TransaksiTerakhir extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 7),
-      height: 120,
+      height: 100,
       width: 375,
       decoration: BoxDecoration(
-          color: Color.fromARGB(199, 14, 35, 94),
+          color: Colors.white,
           borderRadius: BorderRadius.circular(15)),
       child: Row(
         children: [
@@ -26,13 +26,15 @@ class TransaksiTerakhir extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Transaksi Terakhir : ",
+                      "Pemasukan",
                       style: TextStyle(
-                          fontSize: 23,
-                          color: Color.fromARGB(255, 177, 212, 241),
+                          fontSize: 20,
+                          color: Color.fromARGB(255, 58, 52, 52),
                           fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,40 +42,41 @@ class TransaksiTerakhir extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(right: 5),
                           child: Container(
-                            height: 63,
+                            height: 53,
                             width: 11,
                             decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 177, 212, 241),
+                                color:
+                                    Color.fromARGB(255, 177, 212, 241),
                                 borderRadius:
                                     BorderRadius.circular(10)),
-                            child: const Text(".", style: TextStyle(color: Color.fromARGB(255, 177, 212, 241)),),
+                            child: const Text(
+                              ".",
+                              style: TextStyle(
+                                  color: Color.fromARGB(
+                                      255, 177, 212, 241)),
+                            ),
                           ),
                         ),
                         Container(
                           padding: EdgeInsets.only(top: 3),
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                            crossAxisAlignment:
+                                CrossAxisAlignment.start,
                             children: const [
-                              Text(
-                                "Pemasukan No.50",
-                                style: TextStyle(
-                                    fontSize: 17,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w500),
-                              ),
                               Text(
                                 "11/11/2022",
                                 style: TextStyle(
                                     fontSize: 17,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w500),
+                                    color: Color.fromARGB(255, 58, 52, 52),
+                                    fontWeight: FontWeight.bold),
                               ),
+                              SizedBox(height: 7,),
                               Text(
-                                "Toko Suka Maju",
+                                "Beng Beng",
                                 style: TextStyle(
                                     fontSize: 17,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w500),
+                                    color: Color.fromARGB(255, 58, 52, 52),
+                                    fontWeight: FontWeight.bold),
                               )
                             ],
                           ),
@@ -89,24 +92,24 @@ class TransaksiTerakhir extends StatelessWidget {
             width: 25,
           ),
           Padding(
-            padding: const EdgeInsets.only(top:35, left: 20),
+            padding: const EdgeInsets.only(top: 28, left: 130),
             child: Container(
-
               child: Column(
                 children: const [
                   Text(
                     "100",
                     style: TextStyle(
-                        fontSize: 35,
-                        color: Colors.white,
+                        fontSize: 25,
+                        color: Color.fromARGB(255, 58, 52, 52),
                         fontWeight: FontWeight.bold),
                   ),
+                  SizedBox(height: 5,),
                   Text(
                     "Rp. 110.000,-",
                     style: TextStyle(
                         fontSize: 16,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500),
+                        color: Color.fromARGB(255, 58, 52, 52),
+                        fontWeight: FontWeight.bold),
                   )
                 ],
               ),
