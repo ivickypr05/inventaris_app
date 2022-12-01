@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventaris_app/app/modules/history/views/history_view.dart';
 import 'package:inventaris_app/app/modules/profile/views/profile_view.dart';
 
 class Saldo extends StatelessWidget {
@@ -11,7 +12,7 @@ class Saldo extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(top: 25),
       height: 180,
-      width: 220,
+      width: 210,
       decoration: BoxDecoration(
           color: Color.fromARGB(199, 14, 35, 94),
           borderRadius: BorderRadius.circular(15)),
@@ -20,7 +21,7 @@ class Saldo extends StatelessWidget {
           GestureDetector(
             onTap: (){
               print("object");
-              ProfileView();
+              HistoryView();
             },
             child: Text(
               "Saldo",

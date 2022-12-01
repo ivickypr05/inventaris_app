@@ -15,15 +15,15 @@ class HistoryView extends GetView<HistoryController> {
       backgroundColor: Color.fromRGBO(239, 242, 247, 1),
       bottomNavigationBar: BottomNavbar(),
       body: SafeArea(
-        child: Container(
-            child: Column(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
               padding: const EdgeInsets.only(
-                  right: 280, top: 10, bottom: 10, left: 10),
+                  right: 280, top: 10, bottom: 15, left: 50),
               child: Container(
                 child: Column(
-                  children: [
+                  children: const [
                     Text(
                       "Riwayat Transaksi",
                       style:
@@ -34,34 +34,62 @@ class HistoryView extends GetView<HistoryController> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20, bottom: 30),
+              padding: const EdgeInsets.only(left: 14, bottom: 30),
               child: Container(
-                padding: EdgeInsets.only(left: 20, top: 5, bottom: 5),
+                padding: EdgeInsets.only(left: 5, top: 8, bottom: 5),
                 height: 30,
-                width: 438,
+                width: 395,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
-                child: Column(
+                child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Cari"),
+                    Icon(
+                      Icons.search,
+                      size: 17,
+                      color: Colors.black,
+                    ),
+                    SizedBox(width: 10),
+                    Text("Search.."),
                   ],
                 ),
               ),
             ),
-            Container(
-              child: Column(
-                children: [
-                  Pemasukan(),
-                  Pengeluaran(),
-                ],
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: const [
+                    Pemasukan(),
+                    SizedBox(height: 10),
+                    Pengeluaran(),
+                    SizedBox(height: 10),
+                    Pemasukan(),
+                    SizedBox(height: 10),
+                    Pengeluaran(),
+                    SizedBox(height: 10),
+                    Pemasukan(),
+                    SizedBox(height: 10),
+                    Pengeluaran(),
+                    SizedBox(height: 10),
+                    Pemasukan(),
+                    SizedBox(height: 10),
+                    Pengeluaran(),
+                    SizedBox(height: 10),
+                    Pemasukan(),
+                    SizedBox(height: 10),
+                    Pengeluaran(),
+                    SizedBox(height: 10),
+                    Pemasukan(),
+                    SizedBox(height: 10),
+                    Pengeluaran(),
+                  ],
+                ),
               ),
             )
           ],
-        )),
+        ),
       ),
     );
   }
 }
-

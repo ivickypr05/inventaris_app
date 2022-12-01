@@ -9,8 +9,8 @@ class Pemasukan extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 7),
-      height: 100,
-      width: 375,
+      height: 80,
+      width: 400,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(15)),
@@ -19,7 +19,7 @@ class Pemasukan extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 5),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -28,7 +28,7 @@ class Pemasukan extends StatelessWidget {
                     const Text(
                       "Pemasukan",
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 16,
                           color: Color.fromARGB(255, 58, 52, 52),
                           fontWeight: FontWeight.bold),
                     ),
@@ -42,15 +42,15 @@ class Pemasukan extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(right: 5),
                           child: Container(
-                            height: 53,
-                            width: 11,
+                            height: 40,
+                            width: 8,
                             decoration: BoxDecoration(
                                 color:
-                                    Color.fromARGB(255, 177, 212, 241),
+                                    Color.fromARGB(255, 50, 66, 78),
                                 borderRadius:
                                     BorderRadius.circular(10)),
                             child: const Text(
-                              ".",
+                              "",
                               style: TextStyle(
                                   color: Color.fromARGB(
                                       255, 177, 212, 241)),
@@ -66,7 +66,7 @@ class Pemasukan extends StatelessWidget {
                               Text(
                                 "11/11/2022",
                                 style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 13,
                                     color: Color.fromARGB(255, 58, 52, 52),
                                     fontWeight: FontWeight.bold),
                               ),
@@ -74,7 +74,7 @@ class Pemasukan extends StatelessWidget {
                               Text(
                                 "Beng Beng",
                                 style: TextStyle(
-                                    fontSize: 17,
+                                    fontSize: 13,
                                     color: Color.fromARGB(255, 58, 52, 52),
                                     fontWeight: FontWeight.bold),
                               )
@@ -92,14 +92,14 @@ class Pemasukan extends StatelessWidget {
             width: 25,
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 28, left: 130),
+            padding: const EdgeInsets.only(top: 19, left: 185),
             child: Container(
               child: Column(
                 children: const [
                   Text(
                     "100",
                     style: TextStyle(
-                        fontSize: 25,
+                        fontSize: 20,
                         color: Color.fromARGB(255, 58, 52, 52),
                         fontWeight: FontWeight.bold),
                   ),
@@ -107,7 +107,7 @@ class Pemasukan extends StatelessWidget {
                   Text(
                     "Rp. 110.000,-",
                     style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 15,
                         color: Color.fromARGB(255, 58, 52, 52),
                         fontWeight: FontWeight.bold),
                   )

@@ -19,59 +19,63 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(239, 242, 247, 1),
       bottomNavigationBar: BottomNavbar(),
-      body: (SafeArea(
-          child: Container(
-        child: Column(
+      body: SingleChildScrollView(
+        child: (SafeArea(
+            child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(right: 90, top: 10 ,bottom: 10),
+              padding: const EdgeInsets.only(right: 175, top: 10, bottom: 10),
               child: Container(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
-                      "Hi Owner..",
+                      "Hello",
                       style:
-                          TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      "Welcome to F2V Inventory (>.<)",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                      'Welcome to F2V Inventory',
+                      style: TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.w600),
                     ),
                   ],
                 ),
               ),
             ),
-            SizedBox(height: 10,),
+            const SizedBox(
+              height: 10,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.only(top: 2, left: 8),
+                  padding: const EdgeInsets.only(top: 2, left: 8),
                   child: Column(
-                    children: [
+                    children: const [
                       TotalItem(),
                       SizedBox(height: 5),
                       Stock(),
                     ],
                   ),
                 ),
-                SizedBox(width: 5),
-                Center(
+                const SizedBox(width: 5),
+                const Center(
                   child: Saldo(),
                 )
               ],
             ),
-            SizedBox(height: 30),
-            TransaksiTerakhir(),
-            SizedBox(height: 30),
-            Item(),
-            SizedBox(height: 10,),
-            History()
+            const SizedBox(height: 30),
+            const TransaksiTerakhir(),
+            const SizedBox(height: 30),
+            const Item(),
+            const SizedBox(
+              height: 10,
+            ),
+            const History()
           ],
-        ),
-      ))),
+        ))),
+      ),
     );
   }
 }
-
