@@ -44,7 +44,7 @@ class HistoryView extends GetView<HistoryController> {
                     borderRadius: BorderRadius.circular(10)),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     Icon(
                       Icons.search,
                       size: 17,
